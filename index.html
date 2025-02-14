@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-2.css">
+    <title>Duolingo Blog</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <img src="Duo logo.png" alt="Logo">
+            <div class="submenu hide">
+                <ul>
+                    <li>
+                        <div>
+                            <p>subjects</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 16 10"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15.7271 0.807029C16.091 1.17091 16.091 1.76087 15.7271 2.12475L8.65886 9.19298C8.29498 9.55686 7.70502 9.55686 7.34114 9.19298L0.27291 2.12475C-0.09097 1.76087 -0.09097 1.17091 0.27291 0.807029C0.63679 0.443149 1.22676 0.443149 1.59064 0.807029L8 7.21639L14.4094 0.807029C14.7732 0.443149 15.3632 0.443149 15.7271 0.807029Z"
+                                    fill="#AFAFAF"></path>
+                            </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>inside duolingo</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 16 10"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15.7271 0.807029C16.091 1.17091 16.091 1.76087 15.7271 2.12475L8.65886 9.19298C8.29498 9.55686 7.70502 9.55686 7.34114 9.19298L0.27291 2.12475C-0.09097 1.76087 -0.09097 1.17091 0.27291 0.807029C0.63679 0.443149 1.22676 0.443149 1.59064 0.807029L8 7.21639L14.4094 0.807029C14.7732 0.443149 15.3632 0.443149 15.7271 0.807029Z"
+                                    fill="#AFAFAF"></path>
+                            </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>site language</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 16 10"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15.7271 0.807029C16.091 1.17091 16.091 1.76087 15.7271 2.12475L8.65886 9.19298C8.29498 9.55686 7.70502 9.55686 7.34114 9.19298L0.27291 2.12475C-0.09097 1.76087 -0.09097 1.17091 0.27291 0.807029C0.63679 0.443149 1.22676 0.443149 1.59064 0.807029L8 7.21639L14.4094 0.807029C14.7732 0.443149 15.3632 0.443149 15.7271 0.807029Z"
+                                    fill="#AFAFAF"></path>
+                            </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 20 20" fill="none">
+                                <path
+                                    d="M4.49688 8.59959C4.49688 6.00385 6.60114 3.89959 9.19688 3.89959C11.7926 3.89959 13.8969 6.00385 13.8969 8.59959C13.8969 11.1953 11.7926 13.2996 9.19688 13.2996C6.60114 13.2996 4.49688 11.1953 4.49688 8.59959ZM9.19688 2.09958C5.60702 2.09958 2.69687 5.00973 2.69687 8.59959C2.69687 12.1894 5.60702 15.0996 9.19688 15.0996C10.4608 15.0996 11.6407 14.7387 12.6389 14.1144L16.5605 18.036C16.912 18.3875 17.4818 18.3875 17.8333 18.036C18.1847 17.6845 18.1847 17.1147 17.8333 16.7632L14.0234 12.9533C15.0635 11.801 15.6969 10.2742 15.6969 8.59959C15.6969 5.00973 12.7867 2.09958 9.19688 2.09958Z"
+                                    fill="#AFAFAF" stroke="#AFAFAF" stroke-width="0.2" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                            <form action="">
+                                <input type="text" name="search" id="serach" placeholder="search...">
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-icon" id="menu"><svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" style="user-select: auto;">
+                    <path d="M22.216 1.64062C15.616 1.64062 2.41602 1.64062 2.41602 1.64062" stroke="#777777"
+                        style="stroke: color(display-p3 0.4667 0.4667 0.4667); stroke-opacity: 1; user-select: auto;"
+                        stroke-width="3" stroke-linecap="round"></path>
+                    <path d="M22.216 9.64062C15.616 9.64062 2.41602 9.64062 2.41602 9.64062" stroke="#777777"
+                        style="stroke: color(display-p3 0.4667 0.4667 0.4667); stroke-opacity: 1; user-select: auto;"
+                        stroke-width="3" stroke-linecap="round"></path>
+                    <path d="M22.216 17.6406C15.616 17.6406 2.41602 17.6406 2.41602 17.6406" stroke="#777777"
+                        style="stroke: color(display-p3 0.4667 0.4667 0.4667); stroke-opacity: 1; user-select: auto;"
+                        stroke-width="3" stroke-linecap="round"></path>
+                </svg></div>
+        </div>
+        <div class="content">
+            <h1 class="title">what is the easiest language to learn?</h1>
+            <p class="subtitle">Here's what makes a language "easier" for some, and how to select a language to learn!
+            </p>
+            <p class="date-writter">JUNE 22, 2021 | <span class="hover-blue">CINDY BLANCO, PH.D.</span></p>
+            <img src="cover_Whats-the-easiest-language-to-learn.png" alt="" class="cover-fimg">
+            <h1 class="title mobileTitle">what is the easiest language to learn?</h1>
+            <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ducimus quam minima
+                corrupti inventore molestias id dicta ipsa labore? Exercitationem assumenda omnis soluta optio esse
+                necessitatibus alias at quo error iusto molestias ea doloremque dolorem sequi, harum porro. Vitae
+                doloribus quos sapiente neque ullam reiciendis, animi inventore quas qui dolores, accusantium ipsam
+                nesciunt commodi aliquid harum dolorem et quam ipsa accusamus blanditiis sunt in possimus! Hic ducimus
+                laudantium perspiciatis neque dignissimos rerum provident, obcaecati deleniti veritatis enim earum
+                eligendi aut nobis vero laborum amet non vel facilis expedita? Tempore eligendi error aperiam quisquam
+                deleniti reiciendis doloribus, sit illo fuga praesentium?</p>
+            <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sit et illo eligendi
+                libero, excepturi adipisci vel voluptatibus labore, sint harum exercitationem consequuntur provident
+                sunt eos enim cum repellat tempora.</p>
+            <img src="tac_DetectiveSearch.png" alt="Detective Searchng Man" class="detective-search">
+            <p class="sub-heading-1">Decide what it means for you to "know" the language.</p>
+            <table class="table-1">
+                <tr>
+                    <td class="td-1">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio non obcaecati alias corporis
+                            autem eum, minima adipisci sapiente illum ,<span style="color: #14bfdd;">nostrum labore,
+                                quis, repellendus</span> reiciendis ut nihil sunt dignissimos assumenda voluptatem.
+                            Accusantium modi, odit debitis itaque obcaecati iusto impedit ipsa mollitia. Lorem ipsum
+                            dolor sit amet consectetur adipisicing elit. Cupiditate aliquam nulla illo fugit impedit, ab
+                            alias? Similique excepturi, eum autem fugiat ut veniam? Rerum quisquam consequatur saepe
+                            suscipit odit consectetur ipsa modi, porro quo quod! Dolorum doloremque temporibus earum
+                            recusandae.</p>
+                        <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span
+                                style="color:#14bfdd;">Voluptatibus quasi</span> quisquam ad commodi ipsum, cum
+                            voluptate debitis blanditiis sunt repudiandae aspernatur nesciunt dolores similique fugiat
+                            culpa beatae sapiente iste impedit!</p>
+                    </td>
+                    <td class="td-2"><img src="man_speaking_spanish.png" alt="Man speaking spanish"></td>
+                </tr>
+            </table>
+            <p class="sub-heading-1">"Easy" or "hard" is all about what languages you already know.</p>
+            <p class="text-1">Lorem ipsum dolor, <span>sit amet consectetur</span> adipisicing elit. Labore non eaque
+                distinctio libero, tenetur nulla mollitia sed possimus ex, quis eveniet, dicta aliquid! <span
+                    style="color: #14bfdd;">Repudiandae necessitatibus</span> voluptate, provident odit fuga
+                exercitationem at culpa eius rerum voluptates aperiam alias voluptatibus accusamus quod molestias vitae!
+                Libero obcaecati velit rem dolores adipisci. Magni, placeat fugit ex obcaecati eligendi consequatur sunt
+                at assumenda harum necessitatibus ducimus in? Placeat voluptatibus sequi laborum asperiores modi
+                voluptatum, unde sit excepturi odit. Consectetur mollitia qui numquam facere quod ratione, magni
+                molestias rerum dignissimos, culpa nesciunt, perferendis placeat quam labore.</p>
+            <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span
+                    style="color: #14bfdd;">Modi unde eaque mollitia explicabo ipsa iure qui</span> consequuntur laborum
+                debitis laboriosam dicta, minus, consequatur iste maiores ipsum. Distinctio minima non nesciunt
+                assumenda voluptas velit esse! Laboriosam hic rerum ex quia. Placeat culpa unde necessitatibus aperiam,
+                qui ipsam voluptate facilis illum id neque quasi fugiat vero accusantium in nobis nisi quia asperiores
+                commodi dolorem doloremque? Quo soluta voluptatibus cumque inventore perspiciatis. Molestias.</p>
+            <p class="sub-heading-1">A language can have a mix of easy and hard properties.</p>
+            <table class="table-2">
+                <tr>
+                    <td class="t2-td1"><img src="Vikram---Incorrect@4x.png" alt="Vikram is thinking"></td>
+                    <td class="t2-td2">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat non, dolor voluptatibus
+                            commodi ratione dolorem nobis voluptatum aut veniam? Beatae, excepturi dolores incidunt
+                            reprehenderit ducimus quam fuga dolorum maxime? Rerum.</p>
+                        <p class="p2">Lorem, ipsum dolor sit amet <span style="color: #14bfdd;">adipisicing elit.</span>
+                            Iste necessitatibus nemo dolore, nostrum eveniet harum, ipsum itaque fugiat quis quidem
+                            laudantium praesentium placeat. Nostrum pariatur adipisci laboriosam voluptatibus itaque
+                            facere quis sunt optio fugit distinctio animi iure doloribus <span
+                                style="color: #14bfdd;">ullam sapiente excepturi, voluptatem dolor atque.</span> Illo at
+                            est autem nam dolorem, commodi, dignissimos incidunt maxime animi a odit hic qui nisi
+                            officia ut maiores quod obcaecati minus esse dolorum ea itaque cupiditate amet dicta! Minus
+                            fugit voluptas voluptatibus sequi, ut molestiae, autem ducimus deserunt, harum dolor
+                            aliquam! Esse natus corrupti provident.</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="sub-heading-1">Oppurtunity and motivation can also make a language "easier".</p>
+            <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae culpa, doloribus deserunt
+                sint libero voluptatum error quos, maxime tempora, id cumque. <span style="color: #14bfdd;">Laudantium
+                    unde atque, facilis repellendus delectus ut</span> similique. Non nostrum consequatur sequi soluta
+                sunt saepe nihil ea quod iste provident praesentium dolores doloremque, quo incidunt! Odio, cum.
+                Voluptates ea ipsum recusandae, incidunt explicabo suscipit.</p>
+            <p class="text-2">Lorem ipsum <span style="color: #14bfdd;">dolor sit amet consectetur, adipisicing
+                    elit.</span> Iure quia assumenda ipsam eveniet consectetur distinctio corporis fugiat, fugit qui
+                cupiditate laudantium impedit odio, inventore cumque perspiciatis dignissimos rerum autem! Nisi, facere
+                cupiditate ipsum facilis porro ut doloremque delectus quo, nemo, explicabo sed accusamus laborum.
+                Commodi numquam doloribus enim tenetur magni, alias aspernatur tempora natus libero esse vero at
+                delectus iure odio cum itaque vel autem cumque sint. Quaerat, temporibus amet.</p>
+            <p class="sub-heading-1">Overall, it's typically easier to study a language more similar to the one you know
+                best.</p>
+            <p class="text-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ratione laboriosam
+                sequi <span style="color: #14bfdd;">rem eveniet inventore facere,</span> molestiae suscipit quia fugit
+                dolores ducimus a necessitatibus nisi, vitae eaque fugiat similique perspiciatis deleniti officia modi
+                cumque. Veritatis!</p>
+            <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span
+                    style="color: #14bfdd;">neque alias nulla maxime</span> possimus. Quaerat, sed. Ex, illo. Nobis,
+                perspiciatis. Et alias aliquid vitae ratione illum dicta officia placeat, nostrum ea porro provident
+                quam voluptas, repellat incidunt <span style="color: #14bfdd;">Spanish</span> aperiam! Nam enim error
+                <span style="color: #14bfdd;">voluptatum totam</span> distinctio iusto cupiditate, ipsa, repudiandae
+                omnis nemo eius non adipisci similique corrupti soluta quod officia aliquid asperiores tenetur sequi
+                ipsum assumenda iure ut facere? Earum perspiciatis error labore architecto optio impedit.</p>
+            <img src="machine-learning-2.png" alt="Machine learning" class="machine-learning">
+            <p class="text-1">No matter which language you decide to study, the most important part of learning a new
+                language is sticking with it. Set practical, personal goals for your learning , and then make studying a
+                regular habit that you can do a little at a tie, for a long time. And check out these tip for learning
+                for the long haul!</p>
+            <h4 class="sub-heading-2">tags</h4>
+            <div class="tag">
+                <p class="tags">learning</p>
+                <p class="tags">language</p>
+                <p class="tags">tips and tricks</p>
+                <p class="tags">fun</p>
+                <p class="tags">brain</p>
+                <p class="tags">english</p>
+                <p class="tags">spanish</p>
+                <p class="tags">french</p>
+                <p class="tags">german</p>
+                <p class="tags">japanese</p>
+                <p class="tags">italian</p>
+                <p class="tags">korean</p>
+                <p class="tags">speaking</p>
+                <p class="tags">writing</p>
+                <p class="tags">reading</p>
+                <p class="tags">listening</p>
+                <p class="tags">pronunctiation</p>
+                <p class="tags">grammar</p>
+                <p class="tags">vocabulary</p>
+                <p class="tags">chinese</p>
+            </div>
+            <div class="share-article">
+                <div>
+                    <p>share article</p>
+                </div>
+                <div class="redirects">
+                    <a href="" class="inner-icon">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 28 28"
+                                fill="none" style="user-select: auto;">
+                                <path
+                                    d="M20.3639 3.39807H8.30268C5.92405 3.39807 3.99512 5.327 3.99512 7.70564V19.7668C3.99512 22.1455 5.92405 24.0744 8.30268 24.0744H20.3639C22.7434 24.0744 24.6714 22.1455 24.6714 19.7668V7.70564C24.6714 5.327 22.7434 3.39807 20.3639 3.39807ZM10.8872 19.7668H8.30268V10.2902H10.8872V19.7668ZM9.59496 9.19778C8.76273 9.19778 8.08731 8.51718 8.08731 7.67807C8.08731 6.83896 8.76273 6.15836 9.59496 6.15836C10.4272 6.15836 11.1026 6.83896 11.1026 7.67807C11.1026 8.51718 10.428 9.19778 9.59496 9.19778ZM21.2254 19.7668H18.6408V14.9389C18.6408 12.0373 15.1948 12.257 15.1948 14.9389V19.7668H12.6103V10.2902H15.1948V11.8108C16.3975 9.58288 21.2254 9.41833 21.2254 13.9439V19.7668Z"
+                                    fill="#1CB0F6"
+                                    style="fill: color(display-p3 0.1098 0.6902 0.9647); fill-opacity: 1; user-select: auto;">
+                                </path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="" class="inner-icon">
+                        <div class="icon">
+                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" style="user-select: auto;">
+                                <path
+                                    d="M11.6681 -0.00646973C5.59946 -0.00646973 0.680176 4.91281 0.680176 10.9814C0.680176 16.4897 4.73801 21.0386 10.0254 21.8331V13.8932H7.30697V11.0045H10.0254V9.08272C10.0254 5.90062 11.5758 4.50406 14.2206 4.50406C15.4875 4.50406 16.1566 4.59746 16.4742 4.64031V7.16094H14.67C13.547 7.16094 13.1547 8.22566 13.1547 9.42554V11.0045H16.4456L15.9995 13.8932H13.1558V21.8561C18.519 21.1298 22.656 16.5435 22.656 10.9814C22.656 4.91281 17.7367 -0.00646973 11.6681 -0.00646973Z"
+                                    fill="#1CB0F6"
+                                    style="fill: color(display-p3 0.1098 0.6902 0.9647); fill-opacity: 1; user-select: auto;">
+                                </path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="" class="inner-icon">
+                        <div class="icon">
+                            <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" style="user-select: auto;">
+                                <path
+                                    d="M1.10102 0.69751L7.48739 9.82583L0.977539 17.4325H3.43803L8.5878 11.3984L12.8097 17.4325H18.3045L11.613 7.85381L17.7216 0.69751H15.2992L10.5181 6.28491L6.61578 0.69751H1.10102Z"
+                                    fill="#1CB0F6"
+                                    style="fill: color(display-p3 0.1098 0.6902 0.9647); fill-opacity: 1; user-select: auto;">
+                                </path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="" class="inner-icon">
+                        <div class="icon">
+                            <svg width="24" height="24" viewBox="0 0 25 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" style="user-select: auto;">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.0183 0.417969C5.39085 0.417969 0.0183105 4.65408 0.0183105 9.8795C0.0183105 13.2578 2.26439 16.2222 5.64308 17.8961C5.45927 18.53 4.46188 21.9742 4.42219 22.2448C4.42219 22.2448 4.39831 22.4481 4.52996 22.5256C4.66162 22.6032 4.81646 22.543 4.81646 22.543C5.194 22.4902 9.1945 19.6803 9.88692 19.1922C10.5787 19.2902 11.2909 19.341 12.0183 19.341C18.6456 19.341 24.0183 15.105 24.0183 9.8795C24.0183 4.65397 18.6456 0.417969 12.0183 0.417969ZM5.3845 13.1824C5.0027 13.1824 4.6922 12.8858 4.6922 12.5212V8.40835H3.61197C3.23731 8.40835 2.93258 8.1042 2.93258 7.73047C2.93258 7.35674 3.23743 7.05258 3.61197 7.05258H7.15704C7.53169 7.05258 7.83642 7.35674 7.83642 7.73047C7.83642 8.1042 7.53158 8.40835 7.15704 8.40835H6.07681V12.5212C6.07681 12.8858 5.76631 13.1824 5.3845 13.1824ZM10.8788 12.8676C10.9453 13.0562 11.1662 13.1734 11.4549 13.1734C11.6073 13.1734 11.7594 13.1404 11.895 13.078C12.0858 12.9902 12.2693 12.748 12.0586 12.0935L10.4033 7.73681C10.2864 7.40462 9.93203 7.06297 9.47984 7.05281C9.02892 7.06308 8.67457 7.40462 8.55791 7.73612L6.90192 12.0949C6.69169 12.7477 6.87515 12.9898 7.06599 13.0778C7.20134 13.1404 7.35365 13.1734 7.50607 13.1734C7.79476 13.1734 8.01549 13.0564 8.08184 12.8681L8.42488 11.9703H10.536L10.8788 12.8676ZM9.48042 8.77943L10.1719 10.7438H8.78892L9.48042 8.77943ZM13.1732 13.0814C12.8074 13.0814 12.5098 12.7967 12.5098 12.4468V7.74489C12.5098 7.36308 12.8269 7.05258 13.2165 7.05258C13.6062 7.05258 13.9232 7.36308 13.9232 7.74489V11.8122H15.3944C15.7603 11.8122 16.0579 12.097 16.0579 12.4468C16.0579 12.7967 15.7603 13.0814 15.3944 13.0814H13.1732ZM16.3264 12.4811C16.3264 12.8629 16.6369 13.1734 17.0187 13.1734C17.4005 13.1734 17.711 12.8629 17.7113 12.4807V10.9702L17.9515 10.73L19.5749 12.8812C19.7072 13.0563 19.9086 13.1564 20.1281 13.1564C20.2794 13.1564 20.4233 13.1082 20.5444 13.0167C20.692 12.9053 20.7874 12.7433 20.813 12.5601C20.8388 12.3769 20.7917 12.1948 20.6801 12.0472L18.9761 9.78962L20.5538 8.2122C20.6622 8.10362 20.7166 7.95397 20.7065 7.7907C20.6966 7.62881 20.6243 7.47293 20.503 7.35177C20.3729 7.22185 20.1994 7.14731 20.0266 7.14731C19.8784 7.14731 19.7419 7.202 19.6426 7.30135L17.711 9.23289V7.74489C17.711 7.36308 17.4005 7.05258 17.0187 7.05258C16.6369 7.05258 16.3264 7.36308 16.3264 7.74489V12.4811Z"
+                                    fill="#1CB0F6" style="user-select: auto;"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="" class="inner-icon">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 25"
+                                fill="none" style="user-select: auto;">
+                                <g clip-path="url(#clip0_570_1319)" style="user-select: auto;">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.2185 -5.72205e-06C5.71266 -5.72205e-06 0.438387 5.27413 0.438387 11.7808C0.438387 14.0064 1.05598 16.0881 2.12862 17.8638L0.00244141 24.1841L6.52467 22.096C8.21248 23.0291 10.1534 23.5614 12.2185 23.5614C18.7252 23.5614 23.9994 18.2866 23.9994 11.7806C23.9994 5.27467 18.7254 -5.72205e-06 12.2185 -5.72205e-06ZM12.2185 21.5875C10.2269 21.5875 8.37193 20.9901 6.82311 19.966L3.05447 21.1724L4.27942 17.5307C3.10546 15.9135 2.41185 13.9271 2.41185 11.7806C2.41198 6.37274 6.81127 1.97319 12.2185 1.97319C17.6257 1.97319 22.0258 6.37274 22.0258 11.7808C22.0258 17.1888 17.6266 21.5877 12.2185 21.5877V21.5875ZM17.7422 14.4574C17.4469 14.2957 15.9963 13.5127 15.7242 13.4021C15.4523 13.2918 15.2538 13.2342 15.0418 13.5276C14.83 13.8204 14.2281 14.4762 14.0458 14.6704C13.8627 14.8645 13.6864 14.8827 13.391 14.7206C13.0964 14.5594 12.1391 14.2052 11.0288 13.138C10.165 12.3074 9.59836 11.3004 9.43394 10.9931C9.26952 10.6854 9.43273 10.5286 9.58894 10.3847C9.72915 10.2547 9.90299 10.0444 10.0599 9.87457C10.2164 9.70477 10.2717 9.58138 10.3793 9.3844C10.4869 9.18742 10.4436 9.00994 10.3738 8.85669C10.3041 8.70384 9.75821 7.20117 9.53014 6.58991C9.30221 5.97864 9.04818 6.0696 8.87259 6.0626C8.69714 6.05655 8.4976 6.02358 8.29712 6.01618C8.09664 6.00851 7.76779 6.07175 7.4812 6.36211C7.19434 6.65261 6.39026 7.35093 6.33482 8.83099C6.27939 10.3101 7.30319 11.7805 7.44595 11.9864C7.58884 12.1928 9.40098 15.4001 12.4125 16.7191C15.4247 18.0377 15.4404 17.6356 15.993 17.6062C16.5459 17.577 17.7994 16.945 18.0764 16.2527C18.3535 15.5602 18.3757 14.9582 18.3052 14.83C18.2347 14.7019 18.0373 14.6187 17.7421 14.4572L17.7422 14.4574Z"
+                                        fill="#1CB0F6"
+                                        style="fill: color(display-p3 0.1098 0.6902 0.9647); fill-opacity: 1; user-select: auto;">
+                                    </path>
+                                </g>
+                                <defs style="user-select: auto;">
+                                    <clipPath id="clip0_570_1319" style="user-select: auto;">
+                                        <rect width="24" height="24.1841" fill="white"
+                                            style="fill: white; fill-opacity: 1; user-select: auto;"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="" class="inner-icon">
+                        <div class="icon">
+                            <svg width="24" height="24" viewBox="0 0 27 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" style="user-select: auto;">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.2123 3.33389H22.7764C22.9775 3.33389 23.163 3.40059 23.312 3.51309L13.4944 12.1308L3.6767 3.51309C3.8257 3.40059 4.0112 3.33389 4.2123 3.33389ZM0.980505 3.99559C1.0975 2.31269 2.4998 0.983887 4.2123 0.983887H22.7764C24.489 0.983887 25.8912 2.31269 26.0082 3.99559H26.072V17.4474C26.0739 17.4759 26.0749 17.5046 26.0749 17.5334C26.0749 17.586 26.0739 17.6383 26.072 17.6904V17.7504H26.0693C25.9565 19.9266 24.1562 21.6564 21.9519 21.6564H5.0591C2.782 21.6564 0.936005 19.8105 0.936005 17.5334C0.936005 17.4755 0.940004 17.4181 0.947804 17.3615V3.99559H0.980505ZM3.2978 6.30749V14.8892L7.0331 11.6104L8.1861 10.5983L3.2978 6.30749ZM9.96731 12.1618L8.58341 13.3766L3.342 17.9773C3.5391 18.7417 4.2331 19.3064 5.0591 19.3064H21.9519C22.7778 19.3064 23.4719 18.7417 23.6689 17.9773L18.4276 13.3766L17.0325 12.152L14.5441 14.3363C13.9435 14.8635 13.0452 14.8635 12.4446 14.3363L9.96731 12.1618ZM18.8137 10.5886L19.9778 11.6104L23.722 14.8969V6.28019L18.8137 10.5886Z"
+                                    fill="#1CB0F6" style="user-select: auto;"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="article-section">
+            <h4 class="related-articles-heading">related articles</h4>
+            <div class="articles">
+                <div class="article-1">
+                    <img src="cover_germanPlurals2.png" alt="cover image">
+                    <p>jan 29 | <span class="hover-blue">stefanie schantl</span></p>
+                    <h4>German plurals: rules, examples, and exceptions</h4>
+                </div>
+                <div class="article-2">
+                    <img src="cover_enDDletters_pink.png" alt="cover image">
+                    <p>jan 21 | <span class="hover-blue">emilie zuniga, ph.d.</span></p>
+                    <h4>Dear Duolingo: What are the hardest languages to learn?</h4>
+                </div>
+                <div class="article-3">
+                    <img src="cover_academic-english.png" alt="cover image">
+                    <p>jan 15 | <span class="hover-blue">joyce lim, ph.d.</span></p>
+                    <h4>The most common academics English phrases (and how to use them)</h4>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="external-links">
+            <div class="categories" id="category-1">
+                <h4>About us</h4>
+                <div class="links">
+                    <p>Courses</p>
+                    <p>Mission</p>
+                    <p>Approach</p>
+                    <p>Efficacy</p>
+                    <p>Team</p>
+                    <p>Research</p>
+                    <p>Careers</p>
+                    <p>Brand guidelines</p>
+                    <p>Press</p>
+                    <p>Investors</p>
+                    <p>Contact us</p>
+                </div>
+            </div>
+            <div class="categories" id="category-2">
+                <h4>Products</h4>
+                <div class="links">
+                    <p>Duolingo</p>
+                    <p>Duolingo English Test</p>
+                    <p>Duolingo for Business</p>
+                    <p>Super Duolingo</p>
+                    <p>Store</p>
+                </div>
+            </div>
+            <div class="categories" id="category-3">
+                <h4>Apps</h4>
+                <div class="links">
+                    <p>Duolingo for Desktop</p>
+                    <p>Duolingo for Android</p>
+                    <p>Duolingo for iOS</p>
+                </div>
+            </div>
+            <div class="categories" id="category-4">
+                <h4>Help and support</h4>
+                <div class="links">
+                    <p>Duolingo FAQs</p>
+                    <p>Duolingo English Test FAQs</p>
+                    <p>Status</p>
+                </div>
+            </div>
+            <div class="categories" id="category-5">
+                <h4>Social</h4>
+                <div class="links">
+                    <p>Blog</p>
+                    <p>Instagram</p>
+                    <p>facebook</p>
+                    <p>YouTube</p>
+                    <p>TikTok</p>
+                    <p>linkedin</p>
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="categories" id="category-6">
+                <h4>Privacy and terms</h4>
+                <div class="links">
+                    <p>Community guidelines</p>
+                    <p>Terms</p>
+                    <p>Privacy</p>
+                    <p>Respecting your "do ont sell my personal information" rights</p>
+                </div>
+            </div>
+            <div class="categories" id="category-7">
+                <h4>Site language:</h4>
+                <div class="links">
+                    <p>Deutsch</p>
+                    <p>English</p>
+                    <p>Espanol</p>
+                    <p>Francias</p>
+                    <p>Portugues</p>
+                    <p>日本語</p>
+                    <p>한국어</p>
+                </div>
+            </div>
+            <p class="rights">2025 Duolingo. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

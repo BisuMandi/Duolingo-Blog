@@ -1,0 +1,33 @@
+/* Here I will write only media quaries */
+:root {
+    --variable-width: 626px;
+}
+@media (max-width: 767px) {
+    .main .articles {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        /* max-width: 500px; */
+    }
+}
+@media (max-width: 640px) {
+    .mobileTitle {
+        display: block;
+    }
+}
+
+/* @media (max-width: 1440px) {
+    .content .title {
+        font-size: 34px;
+    }
+} */
+/* @media (max-width: 1100px) {
+    .content {
+        max-width: calc(var(--variable-width) - 100px);
+    }
+}
+@media (max-width: 1000px) {
+    .content {
+        max-width: calc(var(--variable-width) - 200x);
+    }
+} */
